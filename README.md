@@ -1,0 +1,2 @@
+# ferygood
+Ferygood landing page
