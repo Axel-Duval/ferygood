@@ -1,2 +1,2 @@
-# ferygood
-Ferygood landing page
+# Ferygood landing page
+Hello there 👋

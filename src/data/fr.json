@@ -1,0 +1,130 @@
+{
+  "navigation": {
+    "logo": "Ferygood",
+    "links": [
+      { "label": "Les ingrédients", "to": "#ingredients" },
+      { "label": "L'équipe", "to": "#team" },
+      { "label": "Nos valeurs", "to": "#values" }
+    ],
+    "icons": [
+      {
+        "url": "https://instagram.com/",
+        "img": "./pictures/instagram.png",
+        "alt": "Instagram logo"
+      },
+      {
+        "url": "https://github.com/Axel-Duval/ferygood",
+        "img": "./pictures/github.png",
+        "alt": "Github logo"
+      }
+    ]
+  },
+  "flavors": {
+    "head": {
+      "id": "#flavors",
+      "title": "Nos 3 saveurs",
+      "subtitle": "Délicatement sélectionnées par nos soins.",
+      "color": "yellow"
+    },
+    "list": [
+      {
+        "img": "./pictures/banana.jpg",
+        "alt": "Banane",
+        "title": "Banane",
+        "subtitle": "Doux et sucré",
+        "color": "yellow"
+      },
+      {
+        "img": "./pictures/orange.jpg",
+        "alt": "Orange",
+        "title": "Orange",
+        "subtitle": "Acide et tonique",
+        "color": "orange"
+      },
+      {
+        "img": "./pictures/kiwi.png",
+        "alt": "Kiwi",
+        "title": "Kiwi",
+        "subtitle": "Acerbe et surprenant",
+        "color": "green"
+      }
+    ],
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus inventore veritatis aspernatur accusantium nihil consectetur aut. Ipsa, inventore neque soluta totam animi, eveniet, mollitia debitis eaque omnis consectetur hic."
+  },
+  "ingredients": {
+    "head": {
+      "id": "ingredients",
+      "title": "Les ingrédients",
+      "subtitle": "Pas de chichi mais des pois chiches.",
+      "color": "orange"
+    },
+    "items": [
+      {
+        "type": "La gaufrette",
+        "table": [
+          {
+            "key": "Composition",
+            "value": [
+              "20% pois chiche",
+              "5% de nitrate de sodium",
+              "50% de cacao"
+            ]
+          },
+          {
+            "key": "Description",
+            "value": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus inventore veritatis aspernatur accusantium nihil consectetur aut. Ipsa, inventore neque soluta totam animi, eveniet, mollitia debitis eaque omnis consectetur hic."
+          }
+        ]
+      },
+      {
+        "type": "L'insert",
+        "table": [
+          {
+            "key": "Composition",
+            "value": ["20% de fruit", "5% de sucre", "50% d'eau"]
+          },
+          {
+            "key": "Description",
+            "value": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus inventore veritatis aspernatur accusantium nihil consectetur aut. Ipsa, inventore neque soluta totam animi, eveniet, mollitia debitis eaque omnis consectetur hic."
+          }
+        ]
+      }
+    ]
+  },
+  "team": {
+    "head": {
+      "id": "team",
+      "title": "La Ferri'Team",
+      "subtitle": "Une belle brochette de vainqueurs.",
+      "color": "green"
+    }
+  },
+  "values": {
+    "head": {
+      "id": "values",
+      "title": "Nos valeurs",
+      "subtitle": "Ces choses pour lesquelles nous nous battrons toujours.",
+      "color": "yellow"
+    }
+  },
+  "explainations": {
+    "head": {
+      "id": "explainations",
+      "title": "Carences en fer?",
+      "subtitle": "Mais qu'est-ce que c'est exactement?",
+      "color": "orange"
+    }
+  },
+  "footer": {
+    "copyright": "©Ferygood, 2021-2022",
+    "contact": {
+      "title": "Contactez-nous",
+      "address": "Polytech Montpellier",
+      "email": "hello@ferygood.fr"
+    },
+    "support": {
+      "title": "Soutenir le projet",
+      "subtitle": "Le XX/XX à Nancy"
+    }
+  }
+}
