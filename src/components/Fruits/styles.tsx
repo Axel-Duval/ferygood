@@ -19,29 +19,32 @@ export const Image = styled.img`
   z-index: 1;
   width: 250px;
   border-radius: 25%;
-  cursor: pointer;
-  @keyframes bounce {
-    0% {
-      transform: scale(1, 1) translateY(0);
+  user-select: none;
+  @media (min-width: 700px) {
+    cursor: pointer;
+    @keyframes bounce {
+      0% {
+        transform: scale(1, 1) translateY(0);
+      }
+      10% {
+        transform: scale(1.1, 0.9) translateY(0);
+      }
+      30% {
+        transform: scale(0.9, 1.1) translateY(-100px);
+      }
+      50% {
+        transform: scale(1, 1) translateY(0);
+      }
+      100% {
+        transform: scale(1, 1) translateY(0);
+      }
     }
-    10% {
-      transform: scale(1.1, 0.9) translateY(0);
-    }
-    30% {
-      transform: scale(0.9, 1.1) translateY(-100px);
-    }
-    50% {
-      transform: scale(1, 1) translateY(0);
-    }
-    100% {
-      transform: scale(1, 1) translateY(0);
-    }
-  }
 
-  &:hover {
-    animation-duration: 1.4s;
-    animation-name: bounce;
-    animation-timing-function: ease;
+    &:hover {
+      animation-duration: 1.4s;
+      animation-name: bounce;
+      animation-timing-function: ease;
+    }
   }
 `;
 Image.displayName = "Image";
