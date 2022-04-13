@@ -20,6 +20,7 @@ Flex.displayName = "Flex";
 export const Div = styled.div`
   text-align: center;
   padding: ${(props) => props.theme.space.sm} 0;
+  min-width: min(300px, 100%);
 `;
 Div.displayName = "Div";
 
