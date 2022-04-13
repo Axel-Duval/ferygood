@@ -3,6 +3,7 @@ import { Fruits } from "../components/Fruits";
 import { Header } from "../components/Header";
 import { Ingredients } from "../components/Ingredients";
 import { Navbar } from "../components/Navbar";
+import { ProgressBar } from "../components/ProgressBar";
 import { Title } from "../components/Title";
 import { colorFromTheme } from "../helpers/colors";
 import { data } from "../index";
@@ -11,6 +12,7 @@ import { Main, Wrapper } from "./home.styles";
 
 export const Home = () => (
   <Main>
+    <ProgressBar />
     <Wrapper>
       <Navbar />
       <Header />
