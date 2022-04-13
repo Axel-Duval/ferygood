@@ -21,8 +21,14 @@ export const Footer = () => (
             <Text>{data.footer.contact.address}</Text>
           </Item>
           <Item>
-            <Link href={`mailto:${data.footer.contact.email}`}>
-              {data.footer.contact.email}
+            <Link
+              href={`mailto:${
+                data.footer.contact.email.address
+              }?subject=${encodeURIComponent(
+                data.footer.contact.email.subject
+              )}&body=${encodeURIComponent(data.footer.contact.email.body)}`}
+            >
+              {data.footer.contact.email.address}
             </Link>
           </Item>
         </List>

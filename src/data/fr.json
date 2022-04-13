@@ -120,7 +120,11 @@
     "contact": {
       "title": "Contactez-nous",
       "address": "Polytech Montpellier",
-      "email": "hello@ferygood.fr"
+      "email": {
+        "address": "hello@ferygood.fr",
+        "subject": "Salut la ferri'team 👋",
+        "body": ""
+      }
     },
     "support": {
       "title": "Soutenir le projet",
