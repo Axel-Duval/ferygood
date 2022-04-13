@@ -18,13 +18,13 @@ const handleClick = (value: string | string[]) =>
 export const Ingredients = () => {
   return (
     <Flex>
-      {data.ingredients.items.map((i) => (
-        <div>
+      {data.ingredients.items.map((i, n) => (
+        <div key={n}>
           <Type>{i.type}</Type>
           <Table>
             <TableBody>
-              {i.table.map((e) => (
-                <TableRow>
+              {i.table.map((e, i) => (
+                <TableRow key={i}>
                   <RowHeader
                     onClick={() => {
                       handleClick(e.value);
@@ -37,8 +37,8 @@ export const Ingredients = () => {
                       e.value
                     ) : (
                       <List>
-                        {e.value.map((v) => (
-                          <li>{v}</li>
+                        {e.value.map((v, i) => (
+                          <li key={i}>{v}</li>
                         ))}
                       </List>
                     )}

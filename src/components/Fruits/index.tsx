@@ -15,7 +15,7 @@ export const Fruits = () => (
   <>
     <FruitWrapper>
       {data.flavors.list.map((f) => (
-        <Fruit>
+        <Fruit key={f.title}>
           <Image src={f.img} alt={f.alt} />
           <Title color={colorFromTheme(f.color, theme)}>{f.title}</Title>
           <Subtitle>{f.subtitle}</Subtitle>
