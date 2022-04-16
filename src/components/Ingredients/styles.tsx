@@ -6,7 +6,8 @@ export const Flex = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 400px;
+  gap: ${(props) => props.theme.space.lg};
+  margin: ${(props) => props.theme.space.sm} 0 150px;
 `;
 Flex.displayName = "DivFlex";
 
@@ -24,30 +25,32 @@ export const Type = styled.p`
   font-size: ${(props) => props.theme.font.size.lg};
   margin-top: ${(props) => props.theme.space.xxl};
   margin-bottom: ${(props) => props.theme.space.sm};
+  padding: ${(props) => props.theme.space.xs} ${(props) => props.theme.space.sm};
   margin-left: 12%;
   width: fit-content;
   letter-spacing: 0.05rem;
-  transition: color 0.8s, letter-spacing 0.7s;
+  transition: color 0.8s, letter-spacing 0.7s ease-out;
   user-select: none;
   z-index: 1;
+  color: white;
 
   &::after {
     z-index: -1;
-    transition: width 0.4s;
+    transition: width 0.4s ease-out;
     position: absolute;
-    top: -7px;
-    left: -10px;
+    top: 0;
+    left: 0;
     content: "";
-    height: calc(100% + 14px);
-    width: 3px;
+    height: 100%;
+    width: 100%;
     background-color: ${(props) => randomColorFromTheme(props.theme.color)};
   }
 
   &:hover {
     &::after {
-      width: calc(100% + 20px);
+      width: 3px;
     }
-    color: white;
+    color: inherit;
     letter-spacing: 0.1rem;
   }
 `;
