@@ -5,7 +5,6 @@ export const FruitWrapper = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  min-height: 400px;
 `;
 FruitWrapper.displayName = "FruitWrapper";
 
@@ -22,28 +21,10 @@ export const Image = styled.img`
   user-select: none;
   @media (min-width: 700px) {
     cursor: pointer;
-    @keyframes bounce {
-      0% {
-        transform: scale(1, 1) translateY(0);
-      }
-      10% {
-        transform: scale(1.1, 0.9) translateY(0);
-      }
-      30% {
-        transform: scale(0.9, 1.1) translateY(-100px);
-      }
-      50% {
-        transform: scale(1, 1) translateY(0);
-      }
-      100% {
-        transform: scale(1, 1) translateY(0);
-      }
-    }
+    transition: transform 1s;
 
     &:hover {
-      animation-duration: 1.4s;
-      animation-name: bounce;
-      animation-timing-function: ease;
+      transform: scale(1.2);
     }
   }
 `;
@@ -86,10 +67,10 @@ export const Text = styled.p`
   font-size: ${(props) => props.theme.font.size.sm};
   line-height: 1.3rem;
 
-  margin: 40px 0 60px;
+  margin: 200px 0;
   width: 60%;
   @media (min-width: 1600px) {
-    width: 40%;
+    width: 50%;
   }
   @media (max-width: 1200px) {
     width: 90%;
