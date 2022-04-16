@@ -1,6 +1,8 @@
+import { SupportsCounter } from "../components/Counters/Supports";
+import { VisitsCounter } from "../components/Counters/Visits";
 import { Footer } from "../components/Footer";
 import { Fruits } from "../components/Fruits";
-import { Header } from "../components/Header";
+import { Head } from "../components/Head";
 import { Ingredients } from "../components/Ingredients";
 import { Navbar } from "../components/Navbar";
 import { ProgressBar } from "../components/ProgressBar";
@@ -15,8 +17,8 @@ export const Home = () => (
     <ProgressBar />
     <Wrapper>
       <Navbar />
-      <Header />
-
+      <Head />
+      {/* <Header /> */}
       <Title
         id={data.flavors.head.id}
         name={data.flavors.head.title}
@@ -24,7 +26,6 @@ export const Home = () => (
         color={colorFromTheme(data.flavors.head.color, theme)}
       />
       <Fruits />
-
       <Title
         id={data.ingredients.head.id}
         name={data.ingredients.head.title}
@@ -32,7 +33,6 @@ export const Home = () => (
         color={colorFromTheme(data.ingredients.head.color, theme)}
       />
       <Ingredients />
-
       <Title
         id={data.team.head.id}
         name={data.team.head.title}
@@ -53,5 +53,7 @@ export const Home = () => (
       />
     </Wrapper>
     <Footer />
+    <VisitsCounter />
+    <SupportsCounter />
   </Main>
 );
