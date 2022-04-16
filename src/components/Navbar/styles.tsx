@@ -8,6 +8,8 @@ export const Nav = styled.nav`
   align-items: center;
   flex-wrap: wrap;
   padding: ${(props) => props.theme.space.md};
+  margin-top: ${(props) => props.theme.space.md};
+  margin-bottom: ${(props) => props.theme.space.lg};
 
   @media (max-width: 700px) {
     flex-direction: column;
