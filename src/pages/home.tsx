@@ -27,7 +27,6 @@ export const Home = () => (
         color={colorFromTheme(data.flavors.head.color, theme)}
       />
       <Fruits />
-      <Emojis />
       <Title
         id={data.ingredients.head.id}
         name={data.ingredients.head.title}
@@ -35,6 +34,7 @@ export const Home = () => (
         color={colorFromTheme(data.ingredients.head.color, theme)}
       />
       <Ingredients />
+      <Emojis />
       <Title
         id={data.team.head.id}
         name={data.team.head.title}

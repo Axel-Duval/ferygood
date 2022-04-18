@@ -13,27 +13,17 @@ Wrapper.displayName = "Wrapper";
 
 export const Circle = styled.div`
   position: relative;
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: solid 2px #f4f4f4;
 `;
 Circle.displayName = "Circle";
 
-export const Brand = styled.div`
+export const Emoji = styled.img`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: ${(props) => props.theme.font.family.secondary}, cursive;
-  font-weight: ${(props) => props.theme.font.weight.medium};
-  font-size: ${(props) => props.theme.font.size.lg};
-`;
-Brand.displayName = "Brand";
-
-export const Emoji = styled.p`
-  position: absolute;
-  font-size: 45px;
+  width: 35px;
+  height: 35px;
   padding: 10px;
   border-radius: 4px;
 
@@ -64,6 +54,11 @@ export const Emoji = styled.p`
     transform: translate(-50%, -50%);
     border: solid 2px #ffd106;
     background-color: #fffbea;
+  }
+  &:nth-child(5) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
 Emoji.displayName = "Emoji";
