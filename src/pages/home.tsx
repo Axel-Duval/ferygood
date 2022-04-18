@@ -1,5 +1,6 @@
 import { SupportsCounter } from "../components/Counters/Supports";
 import { VisitsCounter } from "../components/Counters/Visits";
+import { Emojis } from "../components/Emojis";
 import { Footer } from "../components/Footer";
 import { Fruits } from "../components/Fruits";
 import { Head } from "../components/Head";
@@ -26,6 +27,7 @@ export const Home = () => (
         color={colorFromTheme(data.flavors.head.color, theme)}
       />
       <Fruits />
+      <Emojis />
       <Title
         id={data.ingredients.head.id}
         name={data.ingredients.head.title}
