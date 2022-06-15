@@ -8,6 +8,7 @@ export const theme = {
     yellow: "#ffe135",
     green: "#54ca8a",
     grey: "#828282",
+    muted: "#f0f0f0",
   },
   font: {
     family: {
@@ -44,6 +45,7 @@ export const theme = {
     lg: "32px",
     xl: "40px",
     xxl: "48px",
+    xxxl: "120px",
   },
 
   icon: {

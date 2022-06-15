@@ -2,6 +2,7 @@ import { data } from "../../index";
 import {
   Copyright,
   Div,
+  DivCopyright,
   Flex,
   Item,
   Link,
@@ -43,8 +44,8 @@ export const Footer = () => (
         </List>
       </Div>
     </Flex>
-    <Div>
+    <DivCopyright>
       <Copyright>{data.footer.copyright}</Copyright>
-    </Div>
+    </DivCopyright>
   </Wrapper>
 );

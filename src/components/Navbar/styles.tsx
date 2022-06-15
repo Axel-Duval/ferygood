@@ -7,11 +7,9 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: ${(props) => props.theme.space.md};
-  margin-top: ${(props) => props.theme.space.md};
-  margin-bottom: ${(props) => props.theme.space.lg};
+  padding: ${(props) => props.theme.space.xxl} ${(props) => props.theme.space.md};
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     gap: 30px;
   }
@@ -22,7 +20,7 @@ export const List = styled.ul`
   display: flex;
   gap: ${(props) => props.theme.space.md};
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -65,7 +63,7 @@ export const Logo = styled.p`
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     font-size: ${(props) => props.theme.font.size.xxxl};
     &::after {
       transition: width 0.2s;

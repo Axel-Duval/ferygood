@@ -8,7 +8,7 @@
     ],
     "icons": [
       {
-        "url": "https://instagram.com/",
+        "url": "https://instagram.com/lesferygood",
         "img": "./pictures/instagram.png",
         "alt": "Instagram logo"
       },
@@ -18,6 +18,16 @@
         "alt": "Github logo"
       }
     ]
+  },
+  "header": {
+    "img": "./pictures/header.jpg",
+    "def": "[made in Montpellier]",
+    "title": "Ferygood",
+    "subtitle": [
+      "L'association d'une gaufrette gourmande au cacao naturellement riche en fer et d'un délicieux fourrage au fruit, riche en vitamine C.",
+      "Découvre le snack végétal qui réinvente les légumineuses!"
+    ],
+    "slogan": "Un acheté, un au fer"
   },
   "flavors": {
     "head": {
@@ -45,11 +55,11 @@
         "img": "./pictures/kiwi.png",
         "alt": "Kiwi",
         "title": "Kiwi",
-        "subtitle": "Acerbe et surprenant",
+        "subtitle": "Frais et surprenant",
         "color": "green"
       }
     ],
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus inventore veritatis aspernatur accusantium nihil consectetur aut. Ipsa, inventore neque soluta totam animi, eveniet, mollitia debitis eaque omnis consectetur hic."
+    "description": "Les Ferygood se déclinent en trois gammes savoureuses. Laisse-toi séduire par la fraîcheur des Ferygood au kiwi, le goût acidulé des Ferygood à l'orange, ou encore la douceur des Ferygood à la banane."
   },
   "ingredients": {
     "head": {
@@ -65,27 +75,39 @@
           {
             "key": "Composition",
             "value": [
-              "20% pois chiche",
-              "5% de nitrate de sodium",
-              "50% de cacao"
+              "44 % de pois chiche",
+              "14 % de graines de sésame blanc",
+              "11 % de sucre roux",
+              "8.8 % d'eau",
+              "8.8 % de flocon d'avoine",
+              "7 % de cacao",
+              "3.5 % d'huile de tournesol",
+              "2.6 % de chocolat noir"
             ]
           },
           {
             "key": "Description",
-            "value": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus inventore veritatis aspernatur accusantium nihil consectetur aut. Ipsa, inventore neque soluta totam animi, eveniet, mollitia debitis eaque omnis consectetur hic."
+            "value": "La combinaison des pois chiches, graines de sésames, cacao et du chocolat noir permet d'apporter 25 % des apports nutritionnels conseillés en fer en une seule portion de Ferygood. La gaufrette favorise également la biodisponibilité du fer en diminuant ses facteurs antinutritionnels comme les polyphénols et les phytates. Pour cela, les pois chiches sont trempés, germés et torréfiés. Les flocons d'avoine sont quant à eux naturellement riches en phytases qui permettent la dégradation des phytates."
           }
         ]
       },
       {
-        "type": "L'insert",
+        "type": "Le fourrage",
         "table": [
           {
             "key": "Composition",
-            "value": ["20% de fruit", "5% de sucre", "50% d'eau"]
+            "value": [
+              "70 % de fruit",
+              "20 % de sucre roux",
+              "5 % d'eau",
+              "2.5 % de pectine",
+              "1.8 % de jus de citron",
+              "0.7 % d'acérola"
+            ]
           },
           {
             "key": "Description",
-            "value": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga temporibus inventore veritatis aspernatur accusantium nihil consectetur aut. Ipsa, inventore neque soluta totam animi, eveniet, mollitia debitis eaque omnis consectetur hic."
+            "value": "Le fourrage se veut riche en vitamine C notamment grâce aux fruits et à l’acérola. La vitamine C permet une meilleure absorption du fer au niveau des intestins."
           }
         ]
       }
@@ -97,6 +119,10 @@
       "title": "La Ferri'Team",
       "subtitle": "Une belle brochette de vainqueurs.",
       "color": "green"
+    },
+    "body": {
+      "img": "./pictures/team.png",
+      "text": "Nous sommes une équipe de six étudiants, dynamiques et motivés, venus tout droit de Polytech Montpellier. Concernés par les enjeux sociétaux, écologiques et de santé, nous proposons un produit innovant riche en fer qui sera présenté au concours national d'innovation alimentaire Ecotrophélia du 21 au 23 juin 2022."
     }
   },
   "values": {
@@ -105,6 +131,24 @@
       "title": "Nos valeurs",
       "subtitle": "Ces choses pour lesquelles nous nous battrons toujours.",
       "color": "yellow"
+    },
+    "body": {
+      "items": [
+        {
+          "title": "🌱 Engagés pour l'environnement",
+          "description": [
+            "Nous souhaitons agir en faveur de la transition écologique en encourageant les consommateurs à se tourner vers une alimentation plus végétale, notamment grâce aux légumineuses.",
+            "Nous avons fait le choix de proposer un produit nomade, donc emballé individuellement mais en optant pour des matériaux entièrement recyclables, comme le carton et le polyéthylène qui est un mono-matériau."
+          ]
+        },
+        {
+          "title": "⚖️ Engagés envers les consommateurs",
+          "description": [
+            "Nous sommes à l'écoute des besoins des consommateurs en proposant un produit sain, sans conservateurs avec un réel intérêt nutritionnel.",
+            "Nous faisons de la transparence une priorité, notamment en spécifiant la composition et la provenance des matières premières de notre produit."
+          ]
+        }
+      ]
     }
   },
   "explainations": {
@@ -113,6 +157,52 @@
       "title": "Carences en fer?",
       "subtitle": "Mais qu'est-ce que c'est exactement?",
       "color": "orange"
+    },
+    "body": {
+      "items": [
+        {
+          "title": "💡 Le savais-tu?",
+          "description": [
+            "Le fer est essentiel au bon fonctionnement du corps humain. Il permet notamment le transport de l'oxygène dans tous les organes par le biais des globules rouges.",
+            "Actuellement en France, une femme sur quatre est carencée en fer, dont une femme enceinte sur deux. C'est donc pour répondre à cette problématique que l'éco-innovation Ferygood a été développée."
+          ]
+        },
+        {
+          "title": "🔬 Les deux formes du fer",
+          "description": [
+            "- Le fer héminique : se trouve dans les aliments d'origine animale (viande rouge, abats, etc)",
+            "- Le fer non-héminique : se trouve dans les aliments d'origine végétale",
+            "Les Ferygood sont naturellement riches en fer non héminique. Il est apporté par les pois chiches, les flocons d'avoine, les graines de sésame blanc et le cacao."
+          ]
+        }
+      ]
+    }
+  },
+  "counters": {
+    "supports": {
+      "suffix": "votes",
+      "button": {
+        "labels": ["Soutien nous", "Vote pour nous", "Donne nous de la force"],
+        "emojis": [
+          "./emojis/+1.png",
+          "./emojis/dizzy.png",
+          "./emojis/bulb.png",
+          "./emojis/heart.png",
+          "./emojis/tada.png",
+          "./emojis/clap.png",
+          "./emojis/man-raising-hand.png",
+          "./emojis/first_place_medal.png",
+          "./emojis/muscle.png",
+          "./emojis/woman-raising-hand.png",
+          "./emojis/ok_hand.png",
+          "./emojis/pray.png",
+          "./emojis/raised_hands.png",
+          "./emojis/heart_eyes.png"
+        ]
+      }
+    },
+    "views": {
+      "suffix": "vues du site"
     }
   },
   "footer": {
@@ -128,7 +218,7 @@
     },
     "support": {
       "title": "Soutenir le projet",
-      "subtitle": "Le XX/XX à Nancy"
+      "subtitle": "Le 21/22/23 juin à Nancy."
     }
   }
 }

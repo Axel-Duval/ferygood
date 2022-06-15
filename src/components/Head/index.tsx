@@ -1,25 +1,34 @@
-import { ParallaxBanner } from "react-scroll-parallax";
-import { Def, Flex, Subtitle, Title, Wrapper } from "./styles";
+import { data } from "../..";
+import {
+  Def,
+  Flex,
+  Slogan,
+  StyledParallaxBanner,
+  Subtitle,
+  SubtitleItem,
+  Title,
+  Wrapper,
+} from "./styles";
 
 export const Head = () => {
   return (
-    <ParallaxBanner
+    <StyledParallaxBanner
       layers={[
         {
-          image: "./pictures/header4.jpg",
-          speed: 10,
+          image: data.header.img,
+          speed: 1,
         },
         {
           children: (
             <Flex>
               <Wrapper>
-                <Def>[made in montpellier]</Def>
-                <Title>The blur.</Title>
+                <Def>{data.header.def}</Def>
+                <Title>{data.header.title}</Title>
                 <Subtitle>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Fugit sequi, odio debitis, architecto, atque quisquam sapiente
-                  animi reprehenderit voluptatibus voluptates delectus nihil id
-                  rerum alias aperiam cupiditate possimus officiis molestias?
+                  {data.header.subtitle.map((s) => (
+                    <SubtitleItem>{s}</SubtitleItem>
+                  ))}
+                  <Slogan>{data.header.slogan}</Slogan>
                 </Subtitle>
               </Wrapper>
             </Flex>
@@ -27,7 +36,6 @@ export const Head = () => {
           speed: -20,
         },
       ]}
-      style={{ width: "auto", height: "700px" }}
     />
   );
 };

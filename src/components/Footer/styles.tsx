@@ -14,6 +14,7 @@ export const Flex = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding: ${(props) => props.theme.space.xxl} 0;
 `;
 Flex.displayName = "Flex";
 
@@ -26,29 +27,30 @@ Div.displayName = "Div";
 
 export const Title = styled.p`
   position: relative;
-  font-family: ${(props) => props.theme.font.family.secondary}, cursive;
-  font-weight: ${(props) => props.theme.font.weight.medium};
+  font-weight: ${(props) => props.theme.font.weight.bold};
   font-size: ${(props) => props.theme.font.size.xl};
   padding: ${(props) => props.theme.space.sm} 0;
   z-index: 1;
 
   &::before {
     position: absolute;
-    bottom: 0;
-    left: 15%;
-    height: 3px;
-    width: 70%;
+    width: 100%;
     content: "";
     background-color: ${(props) => randomColorFromTheme(props.theme.color)};
-    transition: transform 0.4s, height 1s, left 0.2s, width 0.2s;
+    transition: transform 0.4s, height 1s, left 0.2s, top 0.2s;
     z-index: -1;
+
+    top: 25%;
+    left: 0;
+    height: 30px;
+    transform: rotate(6deg);
   }
 
   &:hover {
     &::before {
+      top: 10%;
       left: 0;
-      width: 100%;
-      height: 35px;
+      height: calc(100% + 10px);
       transform: rotate(-6deg);
     }
   }
@@ -59,10 +61,19 @@ export const Copyright = styled.p`
   font-weight: ${(props) => props.theme.font.weight.light};
   font-size: ${(props) => props.theme.font.size.sm};
   font-style: italic;
+  cursor: pointer;
+  transition: letter-spacing 0.7s;
+
+  &:hover {
+    letter-spacing: 0.07rem;
+  }
 `;
 Copyright.displayName = "Copyright";
 
-export const List = styled.ul``;
+export const List = styled.ul`
+  position: relative;
+  z-index: 1;
+`;
 List.displayName = "List";
 
 export const Item = styled.li`
@@ -78,6 +89,7 @@ export const Link = styled.a`
   text-decoration: none;
   letter-spacing: 0.05rem;
   transition: letter-spacing 1s;
+  cursor: url("./emojis/cursors/e-mail.png") 16 16, auto;
 
   &:hover {
     letter-spacing: 0.1rem;
@@ -102,3 +114,14 @@ export const Text = styled.p`
   letter-spacing: 0.05rem;
 `;
 Text.displayName = "Text";
+
+export const DivCopyright = styled(Div)`
+  padding: ${(props) => props.theme.space.md};
+  background: repeating-linear-gradient(
+    45deg,
+    #f1f1f1,
+    #f1f1f1 5px,
+    #ffffff 5px,
+    #ffffff 25px
+  );
+`;

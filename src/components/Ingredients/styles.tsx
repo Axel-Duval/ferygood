@@ -7,7 +7,7 @@ export const Flex = styled.div`
   align-items: center;
   flex-direction: column;
   gap: ${(props) => props.theme.space.lg};
-  margin: ${(props) => props.theme.space.sm} 0 150px;
+  padding: ${(props) => props.theme.space.xxxl} 0;
 `;
 Flex.displayName = "DivFlex";
 
@@ -16,6 +16,9 @@ export const Table = styled.table`
   font-weight: ${(props) => props.theme.font.weight.light};
   font-size: ${(props) => props.theme.font.size.sm};
   line-height: 1.3rem;
+  background-image: linear-gradient(#f1f1f1 1px, transparent 1px),
+    linear-gradient(to right, #f1f1f1 1px, #ffffff 1px);
+  background-size: 31px 31px;
 `;
 Table.displayName = "Table";
 
@@ -76,6 +79,12 @@ export const RowHeader = styled.th`
   text-align: right;
   user-select: none;
   cursor: pointer;
+
+  @media (max-width: 700px) {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    text-align: center;
+  }
 `;
 RowHeader.displayName = "RowHeader";
 

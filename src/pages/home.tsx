@@ -1,13 +1,16 @@
 import { SupportsCounter } from "../components/Counters/Supports";
 import { VisitsCounter } from "../components/Counters/Visits";
 import { Emojis } from "../components/Emojis";
+import { Explanations } from "../components/Explanations";
 import { Footer } from "../components/Footer";
 import { Fruits } from "../components/Fruits";
 import { Head } from "../components/Head";
 import { Ingredients } from "../components/Ingredients";
 import { Navbar } from "../components/Navbar";
 import { ProgressBar } from "../components/ProgressBar";
+import { Team } from "../components/Team";
 import { Title } from "../components/Title";
+import { Values } from "../components/Values";
 import { colorFromTheme } from "../helpers/colors";
 import { data } from "../index";
 import { theme } from "../theme";
@@ -41,21 +44,24 @@ export const Home = () => (
         description={data.team.head.subtitle}
         color={colorFromTheme(data.team.head.color, theme)}
       />
+      <Team />
+      <SupportsCounter />
       <Title
         id={data.values.head.id}
         name={data.values.head.title}
         description={data.values.head.subtitle}
         color={colorFromTheme(data.values.head.color, theme)}
       />
+      <Values />
       <Title
         id={data.explainations.head.id}
         name={data.explainations.head.title}
         description={data.explainations.head.subtitle}
         color={colorFromTheme(data.explainations.head.color, theme)}
       />
+      <Explanations />
+      <VisitsCounter />
     </Wrapper>
     <Footer />
-    <VisitsCounter />
-    <SupportsCounter />
   </Main>
 );

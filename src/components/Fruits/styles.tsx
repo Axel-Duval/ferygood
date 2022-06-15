@@ -50,6 +50,7 @@ export const Subtitle = styled.p`
   font-size: ${(props) => props.theme.font.size.sm};
   font-weight: ${(props) => props.theme.font.weight.light};
   letter-spacing: 0.05rem;
+  line-height: 1.7rem;
 `;
 Subtitle.displayName = "Subtitle";
 
@@ -68,12 +69,6 @@ export const Text = styled.p`
   line-height: 1.3rem;
 
   margin: 200px 0;
-  width: 60%;
-  @media (min-width: 1600px) {
-    width: 50%;
-  }
-  @media (max-width: 1200px) {
-    width: 90%;
-  }
+  width: min(90%, 500px);
 `;
 Text.displayName = "Text";

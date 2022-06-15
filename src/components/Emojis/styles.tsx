@@ -6,8 +6,9 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   user-select: none;
-  padding: 35px 0;
-  margin-bottom: 150px;
+  overflow: hidden;
+  padding: ${(props) => props.theme.space.xxxl} 0;
+  margin-bottom: ${(props) => props.theme.space.xxxl};
 `;
 Wrapper.displayName = "Wrapper";
 
