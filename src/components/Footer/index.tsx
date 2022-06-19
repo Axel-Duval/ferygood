@@ -3,12 +3,14 @@ import {
   Copyright,
   Div,
   DivCopyright,
+  DivCredits,
   Flex,
   Item,
   Link,
   List,
   Text,
   Title,
+  Unsplash,
   Wrapper,
 } from "./styles";
 
@@ -46,6 +48,12 @@ export const Footer = () => (
     </Flex>
     <DivCopyright>
       <Copyright>{data.footer.copyright}</Copyright>
+      <DivCredits>
+        Crédits photos:{" "}
+        <Unsplash href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          Unsplash
+        </Unsplash>
+      </DivCredits>
     </DivCopyright>
   </Wrapper>
 );

@@ -125,3 +125,14 @@ export const DivCopyright = styled(Div)`
     #ffffff 25px
   );
 `;
+
+export const DivCredits = styled.div`
+  text-align: center;
+  font-weight: ${(props) => props.theme.font.weight.light};
+  font-size: ${(props) => props.theme.font.size.xs};
+  padding: ${(props) => props.theme.space.md} 0 0 0;
+`;
+
+export const Unsplash = styled.a`
+  color: ${(props) => props.theme.color.black};
+`;
