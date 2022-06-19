@@ -75,14 +75,14 @@
           {
             "key": "Composition",
             "value": [
-              "44 % de pois chiche",
-              "14 % de graines de sésame blanc",
-              "11 % de sucre roux",
-              "8.8 % d'eau",
-              "8.8 % de flocon d'avoine",
-              "7 % de cacao",
-              "3.5 % d'huile de tournesol",
-              "2.6 % de chocolat noir"
+              "pois chiche",
+              "graines de sésame blanc",
+              "sucre roux",
+              "eau",
+              "flocon d'avoine",
+              "cacao",
+              "huile de tournesol",
+              "chocolat noir"
             ]
           },
           {
@@ -97,12 +97,12 @@
           {
             "key": "Composition",
             "value": [
-              "70 % de fruit",
-              "20 % de sucre roux",
-              "5 % d'eau",
-              "2.5 % de pectine",
-              "1.8 % de jus de citron",
-              "0.7 % d'acérola"
+              "fruit",
+              "sucre roux",
+              "eau",
+              "pectine",
+              "jus de citron",
+              "acérola"
             ]
           },
           {
