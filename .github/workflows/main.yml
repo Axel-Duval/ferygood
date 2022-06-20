@@ -3,10 +3,12 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 permissions: 
   contents: write
 jobs:
   build-and-deploy:
+    environment: github-pages
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
@@ -17,6 +19,11 @@ jobs:
         run: |
           npm ci
           npm run build
+        env:
+          REACT_APP_COUNT_API_BURL: ${{ secrets.REACT_APP_COUNT_API_BURL }}
+          REACT_APP_COUNT_API_NAMESPACE: ${{ secrets.REACT_APP_COUNT_API_NAMESPACE }}
+          REACT_APP_COUNT_API_KEY_VISITS: ${{ secrets.REACT_APP_COUNT_API_KEY_VISITS }}
+          REACT_APP_COUNT_API_KEY_SUPPORTS: ${{ secrets.REACT_APP_COUNT_API_KEY_SUPPORTS }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
