@@ -76,10 +76,6 @@ export const Text = styled.p`
   padding: ${(props) => props.theme.space.xxl};
   border: solid 2px white;
 
-  &:hover {
-    border-color: black;
-  }
-
   @media (max-width: 1200px) {
     padding: ${(props) => props.theme.space.sm};
   }
